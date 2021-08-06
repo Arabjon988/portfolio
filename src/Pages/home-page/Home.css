@@ -1,0 +1,11 @@
+.main__container{
+    width: 94%;
+    height: auto;
+    margin: auto;
+    z-index: -1;
+    position: relative;
+}
+
+.mainContainerNotActive{
+    filter: blur(20px);
+}

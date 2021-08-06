@@ -1,16 +1,13 @@
 import React from 'react'
 import './Header.css'
 import jordan from '../../assets/jordan.svg'
-import { FiHeart, FiSearch } from "react-icons/fi";
+import converse from '../../assets/converse.png'
+import { FiHeart, FiSearch, FiX } from "react-icons/fi";
 import { BsBag } from "react-icons/bs";
 // import { useState } from 'react';
 
 
-function Header() {
-    const handleHeaderSearch = (e) =>{
-        const mainHeader = document.querySelector(".main__header")
-        mainHeader.classList.add("activeMainHeader") 
-    }
+function Header({ callBack, removeCallBack }) {
 
 
     return (
@@ -18,6 +15,7 @@ function Header() {
             <div className="header__top">
                 <div className="header__topLogoContainer">
                     <img src={jordan} alt="logo" className="header__topLogo" />
+                    <img src={converse} alt="logo" className="header__topLogo2" />
                 </div>
                 <ul className="header__topCollection">
                     <li className="header__topItem">Help
@@ -51,17 +49,35 @@ function Header() {
                         <li className="mainheader__item">Back to School</li>
                     </ul>
                     <div className="mainheader__options">
-                        <div className="searchBar" onClick={handleHeaderSearch}>
+                        <div className="searchBar" onClick={callBack}>
                             <FiSearch />
-                            <input type="text" placeholder="Search ..." className="searchBar__input"  />
+                            <input type="text" placeholder="Search " className="searchBar__input" />
                         </div>
-                        <FiHeart />
-                        <BsBag />
+                        <ul className="mainheader__icons">
+                            <li><FiHeart className="header__icons" /></li>
+                            <li><BsBag className="header__icons" /></li>
+                        </ul>
+                    </div>
+                    <div className="close__searchActive" onClick={removeCallBack} >
+                        <FiX />
                     </div>
                 </div>
+            </div>
+            <div className="header__sale">
+                <p>FREE SHIPPING & 60-DAY FREE RETURNS</p>
+                <a href="#">Join Now</a>
             </div>
         </div>
     )
 }
 
 export default Header
+
+
+// <ul className="searchHistory__collection">
+//                         <li className="historyCollection__item">Popular Search Terms</li>
+//                         <li className="historyCollection__item">Air Force 1</li>
+//                         <li className="historyCollection__item">Jordan</li>
+//                         <li className="historyCollection__item">Air Max</li>
+//                         <li className="historyCollection__item">Blazer</li>
+//                     </ul>
