@@ -1,0 +1,56 @@
+.schoolsale__container{
+    width: 94%;
+    height: 120vh;
+    margin-left: 40px;
+    display: flex;
+}
+
+.schoolsale__main{
+    width: 49%;
+    height: 118.6vh;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position-y: 30%;
+}
+
+.schoolsale__double{
+    height: 120vh;
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgschool{
+    align-items: center;
+    height: 120vh;
+    width: 100%;
+}
+
+
+.primary{
+    width: 100%;
+    height: 60vh;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size:90%;
+    background-color: #912EDF;
+    background-repeat: no-repeat;
+    margin: 10px;
+    object-fit: contain;
+    background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0/w_888,c_limit/84fb5e8a-2c91-453b-b9fc-87721af3d481/nike-just-do-it.jpg');
+}
+
+.secondary{
+    width: 100%;
+    height: 60vh;
+    background-size:90%;
+    background-color: #912EDF;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0/w_888,c_limit/84fb5e8a-2c91-453b-b9fc-87721af3d481/nike-just-do-it.jpg');
+}

@@ -1,0 +1,83 @@
+.trending__container{
+    width: 97%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.trending{
+    padding: 30px 0px;
+    margin-left: 40px;
+}
+
+.trending h3{
+    padding: 10px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.first{
+    position: relative;
+    background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0/w_888,c_limit/3a61c1d3-f87d-4fd8-9d2e-1e16f89792d4/nike-just-do-it.jpg');
+    background-size: cover;
+}
+
+.second{
+    position: relative;
+    background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0/w_888,c_limit/8c0a8f96-2c04-4065-ae7c-4eb71f45ad2b/nike-just-do-it.jpg');
+    background-size: cover;
+}
+
+
+.first .shop__btn{
+    width: 90px;
+    outline: none;
+    border: none;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 35px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    font-size: 17px
+}
+
+
+.second .shop__btn{
+    width: 90px;
+    outline: none;
+    border: none;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 35px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 17px
+}
+
+.second .trend{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20px;
+}
+
+.first .trend{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+}
+
+.trend span{
+    margin-left: 35px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 21px;
+}

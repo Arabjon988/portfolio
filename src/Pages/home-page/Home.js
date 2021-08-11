@@ -2,17 +2,22 @@ import React from 'react'
 import Banner from '../../Components/Banner/Banner'
 import Header from '../../Components/Header/Header'
 import './Home.css'
+import MainContent from '../../Components/maincontent/MainContent'
+import SchoolSale from '../../Components/SchoolSale/SchoolSale'
+import Trending from '../../Components/Trending/Trending'
+import Carousel from '../../Components/Carousel/Carousel'
+
 
 function Home() {
 
-    const handleHeaderSearch = (e) =>{
+    const handleHeaderSearch = (e) => {
         const mainContainer = document.querySelector('.main__container')
         mainContainer.classList.add('mainContainerNotActive')
         const mainHeader = document.querySelector(".main__header")
-        mainHeader.classList.add("activeMainHeader") 
+        mainHeader.classList.add("activeMainHeader")
     }
 
-    const handleHeaderSearchHide = (e)=>{
+    const handleHeaderSearchHide = (e) => {
         const mainContainer = document.querySelector('.main__container')
         mainContainer.classList.remove('mainContainerNotActive')
         const mainHeader = document.querySelector(".main__header")
@@ -20,25 +25,29 @@ function Home() {
     }
 
     const handleHeaderShop = (e) => {
-        const banner = document.querySelector(".banner")
-        banner.classList.add("activeBanner")
+        const shopCollection = document.querySelector(".shop__collection")
+        shopCollection.classList.add("activeShopCollection")
         const headerSale = document.querySelector(".header__sale")
         headerSale.classList.add("activeHeaderSale")
     }
 
     const handleHeaderShopHide = (e) => {
-        const banner = document.querySelector(".banner")
-        banner.classList.remove("activeBanner")
+        const shopCollection = document.querySelector(".shop__collection")
+        shopCollection.classList.remove("activeShopCollection")
         const headerSale = document.querySelector(".header__sale")
         headerSale.classList.remove("activeHeaderSale")
     }
 
     return (
         <div className="home">
-            <Header callBack={handleHeaderSearch} removeCallBack = {handleHeaderSearchHide} />
+            <Header callBack={handleHeaderSearch} removeCallBack={handleHeaderSearchHide} shop={handleHeaderShop} shopHide={handleHeaderShopHide} />
             <div className="main__container">
                 <Banner />
             </div>
+            <MainContent />
+            <SchoolSale />
+            <Trending />
+            <Carousel />
         </div>
     )
 }

@@ -9,3 +9,8 @@
 .mainContainerNotActive{
     filter: blur(20px);
 }
+
+
+.activeHeaderSale{
+    display: none;
+}

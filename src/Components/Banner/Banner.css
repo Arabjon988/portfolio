@@ -10,6 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 
@@ -38,7 +39,7 @@
 }
 
 
-.main__bannerInfo button{
+.shop__btn{
     width: 90px;
     outline: none;
     border: none;
@@ -49,4 +50,28 @@
     color: #fff;
     border-radius: 50px;
     font-size: 17px
+}
+
+
+.contentSeparator{
+    text-align: center;
+    padding-top: 40px;
+    font-family: Nike Feature;
+}
+
+.contentSeparator span{
+    padding: 0px 30px;
+    font-size: 75px;
+    font-weight: 800;
+    letter-spacing: -5px;
+    letter-spacing: -3px;
+    font-family: Nike Future;
+}
+
+.contentSeparator p{
+    font-size: 17;
+    font-weight: 500;
+    margin: 10px 35px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
 }

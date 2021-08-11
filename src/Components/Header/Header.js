@@ -7,7 +7,7 @@ import { BsBag } from "react-icons/bs";
 // import { useState } from 'react';
 
 
-function Header({ callBack, removeCallBack }) {
+function Header({ callBack, removeCallBack, shop }) {
 
 
     return (
@@ -55,7 +55,8 @@ function Header({ callBack, removeCallBack }) {
                         </div>
                         <ul className="mainheader__icons">
                             <li><FiHeart className="header__icons" /></li>
-                            <li><BsBag className="header__icons" /></li>
+                            <li onClick={shop}><BsBag className="header__icons" />
+                            </li>
                         </ul>
                     </div>
                     <div className="close__searchActive" onClick={removeCallBack} >
