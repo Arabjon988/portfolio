@@ -85,6 +85,7 @@
 
 .main__header{
     width: 100%;
+    overflow: hidden;
     height: 60px;
     display: flex;
     align-items: center;

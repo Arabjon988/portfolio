@@ -6,6 +6,10 @@ import MainContent from '../../Components/maincontent/MainContent'
 import SchoolSale from '../../Components/SchoolSale/SchoolSale'
 import Trending from '../../Components/Trending/Trending'
 import Carousel from '../../Components/Carousel/Carousel'
+import Foundation from '../../Components/Foundation/Foundation'
+import UseTeam from '../../Components/Use-Team/UseTeam'
+import Bennefits from '../../Components/Bennefits/Bennefits'
+import FooterTop from '../../Components/Footer-top/Footer_top'
 
 
 function Home() {
@@ -48,6 +52,10 @@ function Home() {
             <SchoolSale />
             <Trending />
             <Carousel />
+            <Foundation />
+            <UseTeam />
+            <Bennefits />
+            <FooterTop />
         </div>
     )
 }
