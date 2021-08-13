@@ -1,15 +1,29 @@
 .usa__team{
     width: 94%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 40px 0px 40px 40px;
+    margin: 0px 0px 40px 40px;
+}
+
+.Usa__team h3{
+    margin-left: 40px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 11vh;
+    margin-bottom: -8vh;
 }
 
 .usa__teamItem{
     width: 32.5%;
     height: 75vh;
+}
+
+.usa__teamItem h3{
+    font-weight: 450;
+    margin-top: 10px;
+    margin-left: 0px;
 }
 
 .usa__teamItem img{

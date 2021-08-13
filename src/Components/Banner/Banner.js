@@ -8,7 +8,7 @@ function Banner() {
                 <div className="main__bannerInfo">
                     <h1>TEAM USA ESSENTIALS</h1>
                     <p>Cheer on all athletes as they take on the world in Tokyo</p><br />
-                    <button className="shop__btn">Shop</button>
+                    <button className="shop__btn first">Shop</button>
                 </div>
             </div>
             <div className="contentSeparator">

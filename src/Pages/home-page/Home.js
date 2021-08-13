@@ -10,6 +10,7 @@ import Foundation from '../../Components/Foundation/Foundation'
 import UseTeam from '../../Components/Use-Team/UseTeam'
 import Bennefits from '../../Components/Bennefits/Bennefits'
 import FooterTop from '../../Components/Footer-top/Footer_top'
+import Footer from '../../Components/Footer/Footer'
 
 
 function Home() {
@@ -56,6 +57,7 @@ function Home() {
             <UseTeam />
             <Bennefits />
             <FooterTop />
+            <Footer />
         </div>
     )
 }

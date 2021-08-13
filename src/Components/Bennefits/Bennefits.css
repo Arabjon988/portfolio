@@ -1,18 +1,23 @@
 .bennefit{
     width: 94%;
     height: 70vh;
-    background-color: red;
-    margin: 30px 0px 30px 40px;
-    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0/w_1792,c_limit/60475bc5-7b0a-457a-a456-000c081ec429/nike-just-do-it.jpg");
-    background-size: cover;
+    margin: 30px 0px 40px 40px;
     align-items: center;
     display: flex;
+    background-size: cover;
+    background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0/w_1792,c_limit/60475bc5-7b0a-457a-a456-000c081ec429/nike-just-do-it.jpg");
     flex-direction: column;
 }
 
+
+
 .bennefit .bennefit__info{
-    top: 40px;
+    width: 110vh;
+    top: 45vh;
     position: relative;
+    text-align: center;
+    line-height: 25px;
+    font-size: 17px;
 }
 
 .shop__btn{
@@ -21,9 +26,10 @@
     height: 20px;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    padding: 20px 0px;
-    margin: 20px;
+    width: 120px;
+    text-align: center;
+    padding: 15px 0px 30px 0px;
+    margin: 20px 3px;
     background-color: #000;
     color: #fff;
     border-radius: 50px;

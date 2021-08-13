@@ -8,9 +8,9 @@ function Bennefits() {
                 <p>Things are better as a Nike Member. Get first and exclusive access to the newest styles & innovation, free shipping, birthday rewards and more.</p>
                 <div className="shop__btns">
                 </div>
-                <button className="shop__btn">Shop
+                <button className="shop__btn">Join Us
                 </button>
-                <button className="shop__btn">Shop</button>
+                <button className="shop__btn">Sign In</button>
             </div>
         </div>
     )

@@ -5,9 +5,9 @@ import Carousel_data from '../../Data/Carousel_data.json'
 function Carousel() {
     return (
         <div className="carousel">
-        <div className="carousel__collection">
-        <h3> The Latest and Greatests</h3>
-            <div className="carousel__wrapper">
+            <div className="carousel__collection">
+                <h3> The Latest and Greatests</h3>
+                <div className="carousel__wrapper">
                     {Carousel_data.map((carouselitem) => (
                         <div className="carousel__item">
                             <img src={carouselitem?.image} alt="picture" />
