@@ -1,0 +1,99 @@
+.cart{
+    margin-top: 6vh;
+    height: auto;
+    width: 100%;
+    margin-bottom: 6vh;
+}
+
+.cart__container{
+    margin-top: 80px;
+    width: 92.5%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+}
+
+.cart__bag{
+    width: 68%;
+    height: 100%;
+    margin-right: -20px;
+}
+
+.cart__summary{
+    margin-left: -10px;
+    width: 32%;
+    height: 100%;
+    bottom: 5vh;
+}
+
+.shipping__detail{
+    padding: 10px 10px;
+    width: 80%;
+    height: 90px;
+    margin: auto;
+    border: 1px solid rgb(212, 216, 189);
+}
+
+.shipping__detail p{
+    word-spacing: -1px;
+    margin-bottom: 3px;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(109, 158, 11);
+}
+
+.shipping__detail span{
+    font-size: 17px;
+    color: rgb(100, 102, 96);
+}
+
+.bag{
+    padding-left: 83px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.bag h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.shop-part{  
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.carousel__item{
+    padding: 0px 7px;
+}
+
+.carousel__item img{
+    width: 60vh;
+    height: auto;
+}
+
+.favorits{
+    width: 80%;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.favorits p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.shop{
+    margin-top: 50px;
+}
+
+.shop h2{
+    margin-bottom: 30px;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}

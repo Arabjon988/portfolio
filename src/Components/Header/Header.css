@@ -10,6 +10,11 @@
     background-color: var(--header-secondary-color);
 }
 
+.header{
+    position: relative;
+    z-index: 30;
+}
+
 .header__topLogo{
     height: 20px;
     width: 20px;
@@ -158,11 +163,12 @@
 .searchBar input{
     border: none;
     outline: none;
-    font-size: 25;
-    color: rgb(245, 241, 235);
+    font-size: 17px;
+    color: rgb(230, 226, 220);
     background-color: transparent;
     text-indent: 10px;
-    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-right: 10px;
     width: 100px;
     height: 20px;
 }

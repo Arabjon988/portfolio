@@ -2,17 +2,19 @@ import React from 'react'
 import './Header.css'
 import jordan from '../../assets/jordan.svg'
 import converse from '../../assets/converse.png'
-import { FiHeart, FiSearch, FiX } from "react-icons/fi";
-import { BsBag } from "react-icons/bs";
+import { FiHeart, FiSearch, FiShoppingBag, FiX } from "react-icons/fi";
+import { NavLink, useLocation } from 'react-router-dom'
 // import { useState } from 'react';
 
 
 function Header({ callBack, removeCallBack, shop }) {
 
+    let location = useLocation();
 
     return (
+        <>
         <div className="header">
-            <div className="header__top">
+        <div className="header__top">
                 <div className="header__topLogoContainer">
                     <img src={jordan} alt="logo" className="header__topLogo" />
                     <img src={converse} alt="logo" className="header__topLogo2" />
@@ -55,7 +57,10 @@ function Header({ callBack, removeCallBack, shop }) {
                         </div>
                         <ul className="mainheader__icons">
                             <li><FiHeart className="header__icons" /></li>
-                            <li onClick={shop}><BsBag className="header__icons" />
+                            <li onClick={shop}>
+                                <NavLink to="/cart">
+                                    <FiShoppingBag className="header__icons" />
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
@@ -64,11 +69,14 @@ function Header({ callBack, removeCallBack, shop }) {
                     </div>
                 </div>
             </div>
-            <div className="header__sale">
+            
+           {location.pathname.match("/cart") ? "" : <div className="header__sale">
                 <p>FREE SHIPPING & 60-DAY FREE RETURNS</p>
-                <a href="#">Join Now</a>
-            </div>
+                <a href="https://www.google.com">Join Now</a>
+            </div> } 
         </div>
+    
+    </>
     )
 }
 

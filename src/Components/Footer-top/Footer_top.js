@@ -18,46 +18,43 @@ function Footer_top() {
                     <h3>Member Rewards & Offers </h3>
                 </div>
             </div>
-            <div className="footer__topInfo">
-                <ul className="top__info">
-                    <h3>info top footer</h3>
-                    <li className="top__infoItem">ddsfdsfsdffd</li>
-                    <li className="top__infoItem">dsfsdfsdsfsdf</li>
-                    <li className="top__infoItem">fsdfsdf</li>
-                    <li className="top__infoItem">bdjfbdsjb</li>
-                    <li className="top__infoItem">bdjfbdsjb</li>
+            <div className="footer__info">
+            <ul className="top__info">
+                <h3>info top footer</h3>
+                <li className="top__infoItem">ddsfdsfsdffd</li>
+                <li className="top__infoItem">dsfsdfsdsfsdf</li>
+                <li className="top__infoItem">fsdfsdf</li>
+                <li className="top__infoItem">bdjfbdsjb</li>
+       
 
-                </ul>
+            </ul>
+            <ul className="top__info">
+                <h3>info top footer</h3>
+                <li className="top__infoItem">ddsfdsfsdffd</li>
+                <li className="top__infoItem">sfsdfsd</li>
+                <li className="top__infoItem">dsfsdfsdsfsdf</li>
+                <li className="top__infoItem">fsdfsdf</li>
+                <li className="top__infoItem">bdjfbdsjb</li>
+           
 
-                <ul className="top__info">
-                    <h3>info top footer</h3>
-                    <li className="top__infoItem">ddsfdsfsdffd</li>
-                    <li className="top__infoItem">sfsdfsd</li>
-                    <li className="top__infoItem">dsfsdfsdsfsdf</li>
-                    <li className="top__infoItem">fsdfsdf</li>
-                    <li className="top__infoItem">bdjfbdsjb</li>
+            </ul>
+            <ul className="top__info">
+                <h3>info top footer</h3>
+                <li className="top__infoItem">ddsfdsfsdffd</li>
+                <li className="top__infoItem">sfsdfsd</li>
+                <li className="top__infoItem">dsfsdfsdsfsdf</li>
 
-                </ul>
-                <ul className="top__info">
-                    <h3>info top footer</h3>
-                    <li className="top__infoItem">ddsfdsfsdffd</li>
-                    <li className="top__infoItem">sfsdfsd</li>
-                    <li className="top__infoItem">dsfsdfsdsfsdf</li>
-                    <li className="top__infoItem">fsdfsdf</li>
-                    <li className="top__infoItem">bdjfbdsjb</li>
-                    <li className="top__infoItem">fsdfsdf</li>
 
-                </ul>
-                <ul className="top__info">
-                    <h3>info top footer</h3>
-                    <li className="top__infoItem">bdjfbdsjb</li>
-                    <li className="top__infoItem">ddsfdsfsdffd</li>
-                    <li className="top__infoItem">sfsdfsd</li>
-                    <li className="top__infoItem">dsfsdfsdsfsdf</li>
-                    <li className="top__infoItem">fsdfsdf</li>
-                </ul>
+            </ul>
+            <ul className="top__info">
+                <h3>info top footer</h3>
+                <li className="top__infoItem">bdjfbdsjb</li>
+                <li className="top__infoItem">ddsfdsfsdffd</li>
+                <li className="top__infoItem">sfsdfsd</li>
+                <li className="top__infoItem">dsfsdfsdsfsdf</li>
 
-            </div>
+            </ul>
+        </div>     
         </div>
     )
 }
