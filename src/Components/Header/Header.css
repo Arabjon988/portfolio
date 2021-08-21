@@ -154,6 +154,10 @@
     align-items: center;
 }
 
+.searchBar:hover{
+    background-color: #e4dcdc;
+}
+
 .searchBar svg{
     font-size: 20px;
     margin-left: 10px;
@@ -202,9 +206,12 @@
 .header__icons{
     width: 23px;
     height: 23px;
-    margin-right: 30px;
     background-color: transparent;
     font-weight: 700;
+}
+
+.header__icons:hover{
+    color: blueviolet;
 }
 
 .mainheader__icons{
@@ -220,19 +227,16 @@
     background-color: transparent;
     margin: 0px 10px;
 }
-.mainheader__icons li:hover{
-    margin: 0px 10px;
-    background-color: rgb(182, 174, 174);
-    border-radius: 66px;
-}
-
-
 
 
 
 .mainheader__options svg{
     font-size: 23px;
     margin: 3px 12px;
+}
+
+.popular-search{
+    display: none;
 }
 
 .activeMainHeader{
@@ -274,11 +278,17 @@
     transform: translateX(-46%);
 }
 
+.activeMainHeader .mainheader__container .mainheader__options .popular-search{
+    display: none;
+    justify-content: center;
+    
+}
+
 .activeMainHeader .mainheader__container .mainheader__options .searchBar{
     animation: enlargeInput 0.3s linear forwards;
     animation-delay: 0.1s;
     transform: translateX();
-    right: 50%;
+    margin-top: 10px;
 }
 
 @keyframes enlargeInput{
@@ -287,13 +297,13 @@
     }
 
     to{
-        width: 600px;
+        width: 500px;
     }
 }
 
 
 .activeMainHeader .mainheader__container .mainheader__options .searchBar input{
-    width: 600px;
+    width: 500px;
 }
 
 .activeMainHeader .mainheader__container .mainheader__options .header__icons{
@@ -301,14 +311,15 @@
 }
 
 .activeMainHeader .mainheader__container .close__searchActive{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
+    width: 80px;
+    border-radius: 120px;
+    height: 38px;
     background-color: var(--header-secondary-color);
     display: grid;
     place-items: center;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
+    margin-right: 30px;
 }
 
 .close__searchActive{

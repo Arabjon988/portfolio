@@ -12,6 +12,7 @@ function MainContent() {
             {location.pathname.match("/section") ? "" : <div className="main-content">
                 {location.pathname.match("/cart") ? "" : <div className="maincontent-wrapper">
                     <h3>Featured: Nike Running</h3>
+                    <NavLink to="/section">
                     <div className="maincontent__video">
                         <div className="maincontent__videoInfo">
                             <h1>PROJECT: RUN FEARLESS</h1>
@@ -19,13 +20,13 @@ function MainContent() {
                             <button className="video__calltoact">Explore</button>
                             <button className="video__calltoact">Shop</button>
                         </div>
-                        <NavLink to="/section">
                             <video autoPlay muted loop className="maincontent__videoSource" src={addVideo}></video>
-                        </NavLink>
                         <div className="videoFrame">
                         </div>
                     </div>
+                </NavLink>
                 </div>
+
                 }
             </div>
             }

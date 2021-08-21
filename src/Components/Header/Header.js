@@ -57,11 +57,18 @@ function Header({ callBack, removeCallBack, shop }) {
                         </div>
                         <ul className="mainheader__icons">
                             <li><FiHeart className="header__icons" /></li>
-                            <li onClick={shop}>
+                            <li onClick={shop} >
                                 <NavLink to="/cart">
                                     <FiShoppingBag className="header__icons" />
                                 </NavLink>
                             </li>
+                        </ul>
+                        <ul className="popular-search">
+                            <li> <p>Popular Search Terms</p> </li>
+                            <li><h4>Air Force 1</h4></li>
+                            <li><h4>Jordan</h4></li>
+                            <li><h4>Air Max</h4></li>
+                            <li><h4>Blazer</h4></li>
                         </ul>
                     </div>
                     <div className="close__searchActive" onClick={removeCallBack} >

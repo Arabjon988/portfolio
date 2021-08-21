@@ -1,35 +1,114 @@
 .section{
-    width: 100%;
-    height: 120vh;
-    display: flex;
+    width: 94%;
+    margin-left: 40px;
+    height: auto;
+    display: block;
     position: relative;
-    align-items: center;
     justify-content: space-between;
 }
 
-.section-info{
-    color: #fff;
-    height: 100%;
-    width: 20%;
-    background-color: black;
-    border: 2px solid blue;
-    margin-right: 10px;
+.hear{
+    font-size: 1px;
+    color: rgb(186, 178, 194);
 }
 
-.section-shop{
-    height: 100%;
-    border: 2px solid brown;
-    width: 80%;
-    margin-left: 20px;
-    background-color: blue;
+.section-info{
+    overflow-inline: unset;
+    color: #fff;
+    height: 140vh;
+    width: 18%;
+    margin-right: 10px;
+    overflow-y: scroll;
+}
+
+
+.section-info ul li{
+    display: flex;
+}
+
+.section-bar{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+li{
+    color: #000;
+}
+
+.workout h3{
+    font-size: 15;
+}
+
+.section__item{
+    margin: 20px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .box{
+    background-color: red;
     width: 300px;
-    height: 300px;
-    background-color: black
+    height: 50px;
+    display: none;
 }
 
-.active-box{
-    background-color: blue;
+.down-box{
+    display: grid;
+}
+
+.section-shop{
+    height: 135vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 82%;
+    margin-left: 20px;
+    background-color: rgb(223, 223, 241);
+}
+
+.shop__item img{
+    width: 90%;
+    height: 76%;
+}
+
+.shop__item{
+    margin: 0px -10px -10px 0px;
+}
+
+.shop-style{
+    width: 92%;
+    height: 78%;
+    background-color: rgb(141, 113, 76);
+}
+
+.shop-style h2{
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 90px;
+    letter-spacing: -3px;
+    word-spacing: 5px;
+    color: #fff;
+}
+
+.shop-style p{
+    margin-left: 35px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.shop__btn{
+    color: #000;
+    background-color: #fff;
+    margin-left: 40px;
+}
+
+.section-wrapper, .filter, .sort{
+    display: flex;
+}
+
+.section-wrapper{
+    margin: 50px 0px;
+    position: static;
+    justify-content: space-around;
 }
