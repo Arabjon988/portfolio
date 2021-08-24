@@ -2,7 +2,7 @@
     margin-top: 40px;
     margin-left: 40px;
     width: 94%;
-    height: 120vh;
+    height: 90vh;
     margin-bottom: 50px;
 }
 
@@ -19,12 +19,24 @@ li{
 
 .carousel__wrapper{  
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     position: relative;
     overflow-y: hidden;
     overflow-x: auto;
 }
+
+.carousel__wrapper::-webkit-scrollbar-thumb{
+    height: 5px;
+    border-radius: 10px;
+    background-color: brown;
+}
+
+.carousel__wrapper::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+}
+
 
 .carousel__item{
     padding: 0px 7px;

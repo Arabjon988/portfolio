@@ -7,21 +7,8 @@ import Shop_data from '../../Data/Shop-data.json'
 
 function Section() {
 
-    const [downBox, setDownBox] = useState('')
-    const down = (e) => {
-        const box = document.querySelector('.box')
-        setDownBox(!downBox)
-        if (!downBox) {
-            box.classList.add("down-box")
-        }
-        else {
-            box.classList.remove("down-box")
-        }
 
-    }
-
-
-
+    const [active, setActive] = useState(false)
     return (
         <div className="section">
 
@@ -43,13 +30,14 @@ function Section() {
                         <li>Walking</li>
                     </div>
                     <ul className="section__collection">
-                        <li className="section__item" onClick={down}><p>Gender</p> <FiChevronDown className="block" /><FiChevronUp /> <ul className="box">
+                        <li className="section__item" onClick={()=> setActive (!active)}> {active ? <FiChevronUp/> : <FiChevronDown />} <p>Gender</p> 
+                        <ul className={active ? 'activeUl' : 'notActiveUl'}>
                             <li><input type="checkbox" name="" id="checkbox" /> Women</li>
                             <li><input type="checkbox" name="" id="checkbox" /> Women</li>
                             <li><input type="checkbox" name="" id="checkbox" /> Unisex</li>
                         </ul></li>
                         <hr className="hear" />
-                        <li className="section__item" onClick={down}><p>Shop by Price </p><FiChevronDown className="block" /> <FiChevronUp /><ul className="box">
+                        <li className="section__item" ><p>Shop by Price </p>  <ul className="box">
                         <li><input type="checkbox" name="" id="checkbox" /> Women</li>
                             <li><input type="checkbox" name="" id="checkbox" /> Women</li>
                             <li><input type="checkbox" name="" id="checkbox" /> Unisex</li>
@@ -59,27 +47,26 @@ function Section() {
                         </ul>
                         </li>
                         <hr className="hear" />
-                        <li className="section__item" onClick={down}><p>Color</p> <FiChevronDown className="block" /><FiChevronUp /> <ul className="box">
+                        <li className="section__item" ><p>Color</p> <FiChevronDown className="block" /><FiChevronUp className="none" /> <ul className="box">
                         <li><input type="checkbox" name="" id="checkbox" /> Women</li>
                             <li><input type="checkbox" name="" id="checkbox" /> Women</li>
                             <li><input type="checkbox" name="" id="checkbox" /> Unisex</li>
                         </ul></li>
                         <hr className="hear" />
-                        <li className="section__item" onClick={down}><p>Icon</p> <FiChevronDown className="block" /> <FiChevronUp /><ul className="box">
+                        <li className="section__item" ><p>Icon</p> <FiChevronDown className="block" /> <FiChevronUp className="none" /><ul className="box">
                         <li><input type="checkbox" name="" id="checkbox" /> Women</li>
                             <li><input type="checkbox" name="" id="checkbox" /> Women</li>
                             <li><input type="checkbox" name="" id="checkbox" /> Unisex</li>
                         </ul>
                         </li>
                         <hr className="hear" />
-                        <li className="section__item" onClick={down}> <p>Technology</p> <FiChevronDown className="block" /> <FiChevronUp /><ul className="box">
+                        <li className="section__item" > <p>Technology</p> <FiChevronDown className="block" /> <FiChevronUp className="none" /><ul className="box">
                         <li><input type="checkbox" name="" id="checkbox" /> Women</li>
                             <li><input type="checkbox" name="" id="checkbox" /> Women</li>
                             <li><input type="checkbox" name="" id="checkbox" /> Unisex</li>
                         </ul></li>
                         <hr className="hear" />
-                        <li className="section__item" onClick={down}>
-                            <p>Shoe Height</p> <FiChevronDown className="block"  /><FiChevronUp /> <ul className="box">
+                        <li className="section__item" ><p>Shoe Height</p> <FiChevronDown className="block"  /><FiChevronUp className="none" /> <ul className="box">
                                 <li></li>
                                 <li></li>
                                 <li><input type="checkbox" name="" id="checkbox" /> Women</li>
@@ -87,7 +74,16 @@ function Section() {
                             <li><input type="checkbox" name="" id="checkbox" /> Unisex</li>
                             </ul></li>
                         <hr className="hear" />
-                        <li className="section__item" onClick={down}> <p>Width</p> <FiChevronDown className="block" /><FiChevronUp /> <ul className="box">
+                        <li className="section__item" > <p>Width</p> <FiChevronDown className="block" /><FiChevronUp className="none" /> <ul className="box">
+                            <li></li>
+                            <li></li>
+                            <li><input type="checkbox" name="" id="checkbox" /> Women</li>
+                            <li><input type="checkbox" name="" id="checkbox" /> Women</li>
+                            <li><input type="checkbox" name="" id="checkbox" /> Unisex</li>
+                        </ul>
+                        </li>
+                        <hr className="hear" />className="none" 
+                        <li className="section__item" ><p>Shoe Feel</p> <FiChevronDown className="block" /> <FiChevronUp className="none" /><ul className="box">
                             <li></li>
                             <li></li>
                             <li><input type="checkbox" name="" id="checkbox" /> Women</li>
@@ -96,7 +92,7 @@ function Section() {
                         </ul>
                         </li>
                         <hr className="hear" />
-                        <li className="section__item" onClick={down}><p>Shoe Feel</p> <FiChevronDown className="block" /> <FiChevronUp /><ul className="box">
+                        <li className="section__item" ><p>Best For</p> <FiChevronDown className="block" /><FiChevronUp className="none" /> <ul className="box">
                             <li></li>
                             <li></li>
                             <li><input type="checkbox" name="" id="checkbox" /> Women</li>
@@ -105,17 +101,7 @@ function Section() {
                         </ul>
                         </li>
                         <hr className="hear" />
-                        <li className="section__item" onClick={down}><p>Best For</p> <FiChevronDown className="block" /><FiChevronUp /> <ul className="box">
-                            <li></li>
-                            <li></li>
-                            <li><input type="checkbox" name="" id="checkbox" /> Women</li>
-                            <li><input type="checkbox" name="" id="checkbox" /> Women</li>
-                            <li><input type="checkbox" name="" id="checkbox" /> Unisex</li>
-                        </ul>
-                        </li>
-                        <hr className="hear" />
-                        <li className="section__item" onClick={down}>
-                            <p>Features</p> <FiChevronDown className="block" /><FiChevronUp /> <ul className="box">
+                        <li className="section__item" ><p>Features</p> <FiChevronDown className="block" /><FiChevronUp className="none" /> <ul className="box">
                                 <li></li>
                                 <li></li>
                                 <li><input type="checkbox" name="" id="checkbox" /> Women</li>
@@ -123,7 +109,7 @@ function Section() {
                             <li><input type="checkbox" name="" id="checkbox" /> Unisex</li>
                             </ul></li>
                         <hr className="hear" />
-                        <li className="section__item" onClick={down}><p>Bennefits</p> <FiChevronDown className="block"  /> <FiChevronUp /> <ul className="box">
+                        <li className="section__item" ><p>Bennefits</p> <FiChevronDown className="block"  /> <FiChevronUp className="none" /> <ul className="box">
                             <li></li>
                             <li></li>
                             <li><input type="checkbox" name="" id="checkbox" /> Women</li>
@@ -136,7 +122,7 @@ function Section() {
                 <div className="section-shop">
                     {Shop_data.map((section) => (
                         <div className="shop__item">
-                            <img src={section?.image} alt="picture" />
+                            <img src={section?.image} alt="Sneakers" />
                             <li className="product__name">{section?.productName}</li>
                             <li>{section?.whose}</li>
                             <li>{section?.colors}</li>

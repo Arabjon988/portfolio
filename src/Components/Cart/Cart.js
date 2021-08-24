@@ -44,7 +44,7 @@ function Cart() {
                     <div className="shop-part">
                         {Carousel_data.map((carouselitem) => (
                             <div className="carousel__item">
-                                <img src={carouselitem?.image} alt="picture" />
+                                <img src={carouselitem?.image} alt="Snekares" />
                                 <li className="product__name">{carouselitem?.productName} </li>
                                 <li> {carouselitem?.whose} </li>
                             </div>

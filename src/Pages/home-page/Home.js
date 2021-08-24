@@ -22,9 +22,9 @@ function Home() {
     }
 
     useEffect (() => {
-        if(localStorage.getItem("jhdfbdkfbkjsdbkjsd"), "fjbdjhfbjabfjab")
+        if(localStorage.getItem("jhdfbdkfbkjsdbkjsd") === "fjbdjhfbjabfjab")
         setShow(false)
-    })
+    }, [])
     return (
         <div className="home"> 
         {show ? <div className="popup">

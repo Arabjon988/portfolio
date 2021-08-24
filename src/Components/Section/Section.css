@@ -42,7 +42,12 @@ li{
 .section__item{
     margin: 20px 0px;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    display: block;
+}
+
+.section__active{
+    display: flex;
 }
 
 .box{
@@ -111,4 +116,22 @@ li{
     margin: 50px 0px;
     position: static;
     justify-content: space-around;
+}
+
+.none{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+
+.block{
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.notActiveUl{
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.4;
 }
